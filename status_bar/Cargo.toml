@@ -1,0 +1,9 @@
+[package]
+name = "status_bar"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gtk = "0.18.2"
+glib = "0.10"
+chrono = "0.4"

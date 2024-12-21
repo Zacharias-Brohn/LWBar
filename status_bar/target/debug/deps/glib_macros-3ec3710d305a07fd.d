@@ -1,0 +1,9 @@
+/Users/zacharias/GithubPractice/LWBar/status_bar/target/debug/deps/libglib_macros-3ec3710d305a07fd.dylib: /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/lib.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/gboxed_derive.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/genum_derive.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/gflags_attribute.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/utils.rs
+
+/Users/zacharias/GithubPractice/LWBar/status_bar/target/debug/deps/glib_macros-3ec3710d305a07fd.d: /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/lib.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/gboxed_derive.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/genum_derive.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/gflags_attribute.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/utils.rs
+
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/lib.rs:
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/gboxed_derive.rs:
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/genum_derive.rs:
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/gflags_attribute.rs:
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/glib-macros-0.10.1/src/utils.rs:

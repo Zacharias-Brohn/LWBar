@@ -1,0 +1,9 @@
+/Users/zacharias/GithubPractice/LWBar/status_bar/target/debug/deps/libfutures_macro-ebb9336935ee3b34.dylib: /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/lib.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/executor.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/join.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/select.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/stream_select.rs
+
+/Users/zacharias/GithubPractice/LWBar/status_bar/target/debug/deps/futures_macro-ebb9336935ee3b34.d: /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/lib.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/executor.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/join.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/select.rs /Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/stream_select.rs
+
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/lib.rs:
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/executor.rs:
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/join.rs:
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/select.rs:
+/Users/zacharias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-macro-0.3.31/src/stream_select.rs:
