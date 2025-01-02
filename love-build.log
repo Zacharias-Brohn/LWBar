@@ -1,0 +1,809 @@
+                  ╭───────────╮
+      /\          │  user    │ zach
+     /  \         │ 󰇅 hname   │ archlinux
+    /    \        │ 󰅐 uptime  │ 1 hour, 12 mins
+   /      \       │  distro  │ Arch Linux x86_64
+  /   ,,   \      │  kernel  │ Linux 6.12.7-zen1-1-zen
+ /   |  |   \     │  term    │ zellij 0.41.2
+/_-''    ''-_\    │  shell   │ zsh 5.9
+                  │ 󰍛 cpu     │ 13th Gen Intel(R) Core(TM) i5-1
+                  │ 󰉉 disk    │ 859.35 GiB / 1.47 TiB (57%) - b
+                  │  memory  │ 9.30 GiB / 31.15 GiB (30%)
+                  │ 󰩟 network │ 192.168.50.172/24 (eno1)
+                  ├───────────┤
+                  │  colors  │ ● ● ● ● ● ● ● ●
+                  ╰───────────╯
+❯ conda deactivate
+❯ yay -S love-git
+AUR Explicit (1): love-git-20241223.3a6a36e2-1
+:: PKGBUILD up to date, skipping download: love-git              1 love-git                                 (Build Files Exist)
+==> Packages to cleanBuild?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> A
+:: Deleting (1/1): /home/zach/.cache/yay/love-git
+HEAD is now at 3355bbe Add SDL3 as a dependency
+warning: could not open directory 'pkg/': Permission denied
+Removing love/
+Removing pkg/
+Skipping repository src/love
+Removing src/build
+  1 love-git                                 (Build Files Exist)
+==> Diffs to show?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==>
+==> Making package: love-git 20241223.3a6a36e2-1 (Mon 30 Dec 2024 12:25:09 PM CET)
+==> Retrieving sources...
+  -> Cloning love git repo...
+Cloning into bare repository '/home/zach/.cache/yay/love-git/love'...
+remote: Enumerating objects: 64597, done.
+remote: Counting objects: 100% (279/279), done.
+remote: Compressing objects: 100% (113/113), done.
+remote: Total 64597 (delta 177), reused 174 (delta 166), pack-reused 64318 (from 2)
+Receiving objects: 100% (64597/64597), 94.10 MiB | 12.72 MiB/s, done.
+Resolving deltas: 100% (24744/24744), done.
+==> WARNING: Skipping verification of source file PGP signatures.
+==> Validating source files with sha256sums...
+    love ... Skipped
+:: (1/1) Parsing SRCINFO: love-git
+==> Making package: love-git 20241223.3a6a36e2-1 (Mon 30 Dec 2024 12:25:19 PM CET)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Updating love git repo...
+==> Validating source files with sha256sums...
+    love ... Skipped
+==> Removing existing $srcdir/ directory...
+==> Extracting sources...
+  -> Creating working copy of love git repo...
+Cloning into 'love'...
+done.
+==> Starting pkgver()...
+==> Updated version: love-git 20241229.44e26a12-1
+==> Sources are ready.
+==> Making package: love-git 20241229.44e26a12-1 (Mon 30 Dec 2024 12:25:23 PM CET)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> WARNING: Using existing $srcdir/ tree
+==> Starting pkgver()...
+==> Starting build()...
+==> Generating makefiles
+-- The C compiler identification is GNU 14.2.1
+-- The CXX compiler identification is GNU 14.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Version: 12.0
+-- LuaJIT: Enabled
+-- Target platform: x64
+-- Found Freetype: /usr/lib/libfreetype.so (found version "2.13.3")
+-- Found Harfbuzz: /usr/lib/libharfbuzz.so
+-- Found OpenAL: /usr/lib/libopenal.so
+-- Found ModPlug: /usr/lib/libmodplug.so
+-- Found Theora: /usr/lib/libtheora.so
+-- Found Vorbis: /usr/lib/libvorbis.so
+-- Found Ogg: /usr/lib/libogg.so
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Found LuaJIT: /usr/lib/libluajit-5.1.so
+-- Configuring done (0.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/zach/.cache/yay/love-git/src/build
+==> Building
+[  0%] Building CXX object CMakeFiles/love_filesystem_root.dir/src/modules/filesystem/File.cpp.o
+[  0%] Building CXX object CMakeFiles/love_graphics_opengl.dir/src/modules/graphics/opengl/Buffer.cpp.o
+[  0%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/BMFontRasterizer.cpp.o
+[  0%] Building CXX object CMakeFiles/love_event_root.dir/src/modules/event/Event.cpp.o
+[  0%] Building CXX object CMakeFiles/love_audio_null.dir/src/modules/audio/null/Audio.cpp.o
+[  1%] Building CXX object CMakeFiles/love_audio_openal.dir/src/modules/audio/openal/Audio.cpp.o
+[  2%] Building CXX object CMakeFiles/love_image_root.dir/src/modules/image/CompressedImageData.cpp.o
+[  2%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/ByteData.cpp.o
+[  2%] Building CXX object CMakeFiles/love_graphics_vulkan.dir/src/modules/graphics/vulkan/Graphics.cpp.o
+[  3%] Building CXX object CMakeFiles/love_image_magpie.dir/src/modules/image/magpie/ASTCHandler.cpp.o
+[  3%] Building CXX object CMakeFiles/love_common.dir/src/common/android.cpp.o
+[  4%] Building CXX object CMakeFiles/love_joystick_root.dir/src/modules/joystick/Joystick.cpp.o
+[  4%] Building CXX object CMakeFiles/love_joystick_sdl.dir/src/modules/joystick/sdl/Joystick.cpp.o
+[  5%] Building CXX object CMakeFiles/love_font_freetype.dir/src/modules/font/freetype/Font.cpp.o
+[  5%] Building CXX object CMakeFiles/love_audio_root.dir/src/modules/audio/Audio.cpp.o
+[  5%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Buffer.cpp.o
+[  5%] Building CXX object CMakeFiles/love_filesystem_physfs.dir/src/modules/filesystem/physfs/File.cpp.o
+[  5%] Building CXX object CMakeFiles/love_keyboard_root.dir/src/modules/keyboard/Keyboard.cpp.o
+[  5%] Building CXX object CMakeFiles/love_event_sdl.dir/src/modules/event/sdl/Event.cpp.o
+[  6%] Building CXX object CMakeFiles/love_keyboard_sdl.dir/src/modules/keyboard/sdl/Keyboard.cpp.o
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:31,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/keyboard/Keyboard.cpp:22:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/checked.h:268:34: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  268 |     class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/14.2.1/iterator:61,
+                 from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/core.h:31,
+                 from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/checked.h:31:
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:32:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/unchecked.h:179:40: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  179 |           class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                        ^~~~~~~~
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+[  6%] Building CXX object CMakeFiles/love_common.dir/src/common/b64.cpp.o
+[  6%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/CompressedData.cpp.o
+[  6%] Building CXX object CMakeFiles/love_image_magpie.dir/src/modules/image/magpie/ddsHandler.cpp.o
+[  6%] Building CXX object CMakeFiles/love_audio_null.dir/src/modules/audio/null/Source.cpp.o
+[  6%] Building CXX object CMakeFiles/love_image_root.dir/src/modules/image/CompressedSlice.cpp.o
+[  6%] Building CXX object CMakeFiles/love_filesystem_physfs.dir/src/modules/filesystem/physfs/Filesystem.cpp.o
+[  6%] Building CXX object CMakeFiles/love_font_freetype.dir/src/modules/font/freetype/HarfbuzzShaper.cpp.o
+[  6%] Building CXX object CMakeFiles/love_filesystem_root.dir/src/modules/filesystem/FileData.cpp.o
+[  7%] Building CXX object CMakeFiles/love_joystick_sdl.dir/src/modules/joystick/sdl/JoystickModule.cpp.o
+[  7%] Building CXX object CMakeFiles/love_common.dir/src/common/Data.cpp.o
+[  7%] Building CXX object CMakeFiles/love_audio_root.dir/src/modules/audio/Source.cpp.o
+[  7%] Building CXX object CMakeFiles/love_joystick_root.dir/src/modules/joystick/wrap_Joystick.cpp.o
+[  7%] Linking CXX static library liblove_keyboard_sdl.a
+[  7%] Building CXX object CMakeFiles/love_event_root.dir/src/modules/event/wrap_Event.cpp.o
+[  7%] Built target love_keyboard_sdl
+[  7%] Building CXX object CMakeFiles/love_keyboard_root.dir/src/modules/keyboard/wrap_Keyboard.cpp.o
+[  8%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/Compressor.cpp.o
+[  8%] Building CXX object CMakeFiles/love_audio_openal.dir/src/modules/audio/openal/Pool.cpp.o
+[  8%] Building CXX object CMakeFiles/love_audio_null.dir/src/modules/audio/null/RecordingDevice.cpp.o
+[  8%] Building CXX object CMakeFiles/love_image_root.dir/src/modules/image/FormatHandler.cpp.o
+[  8%] Building CXX object CMakeFiles/love_image_magpie.dir/src/modules/image/magpie/EXRHandler.cpp.o
+[  8%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Deprecations.cpp.o
+[  9%] Building CXX object CMakeFiles/love_common.dir/src/common/delay.cpp.o
+[  9%] Building CXX object CMakeFiles/love_common.dir/src/common/deprecation.cpp.o
+[  9%] Building CXX object CMakeFiles/love_filesystem_physfs.dir/src/modules/filesystem/physfs/PhysfsIo.cpp.o
+[ 10%] Linking CXX static library liblove_event_sdl.a
+/home/zach/.cache/yay/love-git/src/love/src/modules/filesystem/physfs/Filesystem.cpp: In member function ‘virtual std::string love::filesystem::physfs::Filesystem::getFullCommonPath(love::filesystem::Filesystem::CommonPath)’:
+/home/zach/.cache/yay/love-git/src/love/src/modules/filesystem/physfs/Filesystem.cpp:672:62: warning: ‘const char* PHYSFS_getUserDir()’ is deprecated [-Wdeprecated-declarations]
+  672 |                 fullPaths[path] = normalize(PHYSFS_getUserDir());
+      |                                             ~~~~~~~~~~~~~~~~~^~
+In file included from /home/zach/.cache/yay/love-git/src/love/src/modules/filesystem/physfs/File.h:29,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/filesystem/physfs/Filesystem.cpp:29:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/physfs/physfs.h:822:25: note: declared here
+  822 | PHYSFS_DECL const char *PHYSFS_getUserDir(void) PHYSFS_DEPRECATED;
+      |                         ^~~~~~~~~~~~~~~~~
+[ 11%] Building CXX object CMakeFiles/love_filesystem_root.dir/src/modules/filesystem/Filesystem.cpp.o
+[ 11%] Building CXX object CMakeFiles/love_audio_root.dir/src/modules/audio/RecordingDevice.cpp.o
+[ 11%] Built target love_event_sdl
+[ 11%] Building CXX object CMakeFiles/love_image_root.dir/src/modules/image/Image.cpp.o
+[ 11%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/DataModule.cpp.o
+[ 11%] Building CXX object CMakeFiles/love_graphics_opengl.dir/src/modules/graphics/opengl/FenceSync.cpp.o
+[ 11%] Linking CXX static library liblove_audio_null.a
+[ 11%] Linking CXX static library liblove_keyboard_root.a
+[ 12%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/Font.cpp.o
+[ 12%] Building CXX object CMakeFiles/love_joystick_root.dir/src/modules/joystick/wrap_JoystickModule.cpp.o
+[ 12%] Built target love_audio_null
+[ 12%] Built target love_keyboard_root
+[ 12%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/GenericShaper.cpp.o
+[ 12%] Building CXX object CMakeFiles/love_audio_openal.dir/src/modules/audio/openal/Source.cpp.o
+[ 12%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/DataStream.cpp.o
+[ 12%] Linking CXX static library liblove_joystick_sdl.a
+[ 12%] Linking CXX static library liblove_event_root.a
+[ 12%] Built target love_joystick_sdl
+[ 12%] Building CXX object CMakeFiles/love_font_freetype.dir/src/modules/font/freetype/TrueTypeRasterizer.cpp.o
+[ 12%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/GlyphData.cpp.o
+[ 12%] Built target love_event_root
+[ 12%] Building CXX object CMakeFiles/love_graphics_opengl.dir/src/modules/graphics/opengl/Graphics.cpp.o
+[ 12%] Building CXX object CMakeFiles/love_graphics_vulkan.dir/src/modules/graphics/vulkan/GraphicsReadback.cpp.o
+[ 13%] Linking CXX static library liblove_filesystem_physfs.a
+[ 13%] Building CXX object CMakeFiles/love_audio_root.dir/src/modules/audio/Filter.cpp.o
+[ 13%] Building CXX object CMakeFiles/love_image_root.dir/src/modules/image/ImageData.cpp.o
+[ 13%] Built target love_filesystem_physfs
+[ 14%] Building CXX object CMakeFiles/love_image_root.dir/src/modules/image/ImageDataBase.cpp.o
+[ 14%] Building CXX object CMakeFiles/love_common.dir/src/common/Exception.cpp.o
+[ 14%] Building CXX object CMakeFiles/love_image_root.dir/src/modules/image/wrap_CompressedImageData.cpp.o
+[ 14%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Drawable.cpp.o
+[ 14%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/DataView.cpp.o
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:31,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/Font.cpp:27:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/checked.h:268:34: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  268 |     class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/14.2.1/bits/stl_algobase.h:65,
+                 from /usr/include/c++/14.2.1/bitset:49,
+                 from /home/zach/.cache/yay/love-git/src/love/src/common/types.h:27,
+                 from /home/zach/.cache/yay/love-git/src/love/src/common/Object.h:25,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/Rasterizer.h:25,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/Font.h:25,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/Font.cpp:22:
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:32:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/unchecked.h:179:40: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  179 |           class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                        ^~~~~~~~
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+[ 14%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Graphics.cpp.o
+[ 15%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Font.cpp.o
+[ 15%] Linking CXX static library liblove_joystick_root.a
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:31,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/GlyphData.cpp:25:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/checked.h:268:34: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  268 |     class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/14.2.1/bits/stl_algobase.h:65,
+                 from /usr/include/c++/14.2.1/bitset:49,
+                 from /home/zach/.cache/yay/love-git/src/love/src/common/types.h:27,
+                 from /home/zach/.cache/yay/love-git/src/love/src/common/Object.h:25,
+                 from /home/zach/.cache/yay/love-git/src/love/src/common/Data.h:25,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/GlyphData.h:26,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/GlyphData.cpp:22:
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:32:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/unchecked.h:179:40: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  179 |           class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                        ^~~~~~~~
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+[ 15%] Building CXX object CMakeFiles/love_image_root.dir/src/modules/image/wrap_Image.cpp.o
+[ 15%] Built target love_joystick_root
+[ 15%] Building CXX object CMakeFiles/love_image_root.dir/src/modules/image/wrap_ImageData.cpp.o
+[ 15%] Building CXX object CMakeFiles/love_common.dir/src/common/floattypes.cpp.o
+[ 15%] Building CXX object CMakeFiles/love_common.dir/src/common/Matrix.cpp.o
+[ 15%] Linking CXX static library liblove_font_freetype.a
+[ 16%] Building CXX object CMakeFiles/love_common.dir/src/common/memory.cpp.o
+[ 16%] Building CXX object CMakeFiles/love_filesystem_root.dir/src/modules/filesystem/NativeFile.cpp.o
+[ 16%] Built target love_font_freetype
+[ 17%] Building CXX object CMakeFiles/love_filesystem_root.dir/src/modules/filesystem/wrap_File.cpp.o
+[ 17%] Building CXX object CMakeFiles/love_math.dir/src/modules/math/BezierCurve.cpp.o
+[ 17%] Building CXX object CMakeFiles/love_graphics_vulkan.dir/src/modules/graphics/vulkan/Shader.cpp.o
+[ 17%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/HashFunction.cpp.o
+[ 17%] Building CXX object CMakeFiles/love_graphics_vulkan.dir/src/modules/graphics/vulkan/ShaderStage.cpp.o
+[ 18%] Building CXX object CMakeFiles/love_graphics_vulkan.dir/src/modules/graphics/vulkan/StreamBuffer.cpp.o
+[ 18%] Building CXX object CMakeFiles/love_common.dir/src/common/Module.cpp.o
+[ 18%] Building CXX object CMakeFiles/love_image_magpie.dir/src/modules/image/magpie/KTXHandler.cpp.o
+[ 18%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/ImageRasterizer.cpp.o
+[ 18%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/Rasterizer.cpp.o
+[ 18%] Building CXX object CMakeFiles/love_audio_openal.dir/src/modules/audio/openal/RecordingDevice.cpp.o
+[ 18%] Building CXX object CMakeFiles/love_audio_root.dir/src/modules/audio/Effect.cpp.o
+[ 18%] Building CXX object CMakeFiles/love_mouse_root.dir/src/modules/mouse/Cursor.cpp.o
+[ 18%] Linking CXX static library liblove_image_root.a
+[ 18%] Building CXX object CMakeFiles/love_graphics_vulkan.dir/src/modules/graphics/vulkan/Buffer.cpp.o
+[ 18%] Building CXX object CMakeFiles/love_filesystem_root.dir/src/modules/filesystem/wrap_FileData.cpp.o
+[ 19%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/wrap_ByteData.cpp.o
+[ 19%] Built target love_image_root
+[ 19%] Building CXX object CMakeFiles/love_common.dir/src/common/Object.cpp.o
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:31,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/Rasterizer.cpp:25:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/checked.h:268:34: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  268 |     class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/14.2.1/bits/stl_algobase.h:65,
+                 from /usr/include/c++/14.2.1/bitset:49,
+                 from /home/zach/.cache/yay/love-git/src/love/src/common/types.h:27,
+                 from /home/zach/.cache/yay/love-git/src/love/src/common/Object.h:25,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/Rasterizer.h:25,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/Rasterizer.cpp:22:
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:32:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/unchecked.h:179:40: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  179 |           class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                        ^~~~~~~~
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+[ 19%] Building CXX object CMakeFiles/love_math.dir/src/modules/math/MathModule.cpp.o
+[ 20%] Building CXX object CMakeFiles/love_audio_openal.dir/src/modules/audio/openal/Filter.cpp.o
+[ 20%] Building CXX object CMakeFiles/love_image_magpie.dir/src/modules/image/magpie/PKMHandler.cpp.o
+[ 20%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/wrap_CompressedData.cpp.o
+[ 20%] Building CXX object CMakeFiles/love_mouse_root.dir/src/modules/mouse/wrap_Cursor.cpp.o
+[ 20%] Building CXX object CMakeFiles/love_common.dir/src/common/pixelformat.cpp.o
+[ 20%] Building CXX object CMakeFiles/love_common.dir/src/common/Reference.cpp.o
+[ 20%] Building CXX object CMakeFiles/love_graphics_vulkan.dir/src/modules/graphics/vulkan/Texture.cpp.o
+[ 20%] Building CXX object CMakeFiles/love_filesystem_root.dir/src/modules/filesystem/wrap_Filesystem.cpp.o
+[ 21%] Building CXX object CMakeFiles/love_graphics_opengl.dir/src/modules/graphics/opengl/GraphicsReadback.cpp.o
+[ 22%] Building CXX object CMakeFiles/love_image_magpie.dir/src/modules/image/magpie/PNGHandler.cpp.o
+[ 22%] Building CXX object CMakeFiles/love_graphics_vulkan.dir/src/modules/graphics/vulkan/Vulkan.cpp.o
+[ 23%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/TextShaper.cpp.o
+[ 23%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/wrap_Data.cpp.o
+[ 23%] Building CXX object CMakeFiles/love_audio_root.dir/src/modules/audio/wrap_Audio.cpp.o
+[ 24%] Building CXX object CMakeFiles/love_math.dir/src/modules/math/RandomGenerator.cpp.o
+[ 24%] Building CXX object CMakeFiles/love_common.dir/src/common/runtime.cpp.o
+[ 24%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/wrap_DataModule.cpp.o
+[ 24%] Building CXX object CMakeFiles/love_audio_openal.dir/src/modules/audio/openal/Effect.cpp.o
+[ 24%] Building CXX object CMakeFiles/love_mouse_root.dir/src/modules/mouse/wrap_Mouse.cpp.o
+[ 24%] Building CXX object CMakeFiles/love_data.dir/src/modules/data/wrap_DataView.cpp.o
+[ 24%] Building CXX object CMakeFiles/love_image_magpie.dir/src/modules/image/magpie/PVRHandler.cpp.o
+[ 24%] Building CXX object CMakeFiles/love_audio_root.dir/src/modules/audio/wrap_Source.cpp.o
+[ 24%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/GraphicsReadback.cpp.o
+[ 25%] Building CXX object CMakeFiles/love_audio_root.dir/src/modules/audio/wrap_RecordingDevice.cpp.o
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:31,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/TextShaper.cpp:26:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/checked.h:268:34: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  268 |     class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/14.2.1/bits/stl_algobase.h:65,
+                 from /usr/include/c++/14.2.1/bitset:49,
+                 from /home/zach/.cache/yay/love-git/src/love/src/common/types.h:27,
+                 from /home/zach/.cache/yay/love-git/src/love/src/common/Object.h:25,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/TextShaper.h:24,
+                 from /home/zach/.cache/yay/love-git/src/love/src/modules/font/TextShaper.cpp:22:
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+In file included from /home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8.h:32:
+/home/zach/.cache/yay/love-git/src/love/src/libraries/utf8/utf8/unchecked.h:179:40: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+  179 |           class iterator : public std::iterator <std::bidirectional_iterator_tag, uint32_t> {
+      |                                        ^~~~~~~~
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:127:34: note: declared here
+  127 |     struct _GLIBCXX17_DEPRECATED iterator
+      |                                  ^~~~~~~~
+[ 25%] Building CXX object CMakeFiles/love_filesystem_root.dir/src/modules/filesystem/wrap_NativeFile.cpp.o
+[ 26%] Building CXX object CMakeFiles/love_math.dir/src/modules/math/Transform.cpp.o
+[ 26%] Building CXX object CMakeFiles/love_graphics_opengl.dir/src/modules/graphics/opengl/OpenGL.cpp.o
+[ 26%] Building CXX object CMakeFiles/love_math.dir/src/modules/math/wrap_BezierCurve.cpp.o
+[ 26%] Building CXX object CMakeFiles/love_math.dir/src/modules/math/wrap_Math.cpp.o
+[ 26%] Building CXX object CMakeFiles/love_common.dir/src/common/Stream.cpp.o
+[ 26%] Linking CXX static library liblove_audio_openal.a
+[ 26%] Building CXX object CMakeFiles/love_image_magpie.dir/src/modules/image/magpie/STBHandler.cpp.o
+[ 27%] Linking CXX static library liblove_mouse_root.a
+[ 27%] Built target love_audio_openal
+[ 27%] Building CXX object CMakeFiles/love_math.dir/src/modules/math/wrap_RandomGenerator.cpp.o
+[ 28%] Linking CXX static library liblove_data.a
+[ 28%] Built target love_mouse_root
+[ 28%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/TrueTypeRasterizer.cpp.o
+[ 28%] Linking CXX static library liblove_filesystem_root.a
+[ 28%] Built target love_data
+[ 28%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/wrap_Font.cpp.o
+[ 28%] Built target love_filesystem_root
+[ 28%] Building CXX object CMakeFiles/love_mouse_sdl.dir/src/modules/mouse/sdl/Cursor.cpp.o
+[ 28%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Mesh.cpp.o
+[ 28%] Building CXX object CMakeFiles/love_physics_root.dir/src/modules/physics/Body.cpp.o
+[ 28%] Building CXX object CMakeFiles/love_common.dir/src/common/StringMap.cpp.o
+[ 28%] Building CXX object CMakeFiles/love_mouse_sdl.dir/src/modules/mouse/sdl/Mouse.cpp.o
+[ 28%] Building CXX object CMakeFiles/love_graphics_opengl.dir/src/modules/graphics/opengl/Shader.cpp.o
+[ 28%] Linking CXX static library liblove_audio_root.a
+[ 28%] Building CXX object CMakeFiles/love_common.dir/src/common/types.cpp.o
+[ 28%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/Body.cpp.o
+[ 28%] Built target love_audio_root
+[ 28%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/wrap_GlyphData.cpp.o
+[ 28%] Building CXX object CMakeFiles/love_sensor_root.dir/src/modules/sensor/Sensor.cpp.o
+[ 28%] Building CXX object CMakeFiles/love_physics_root.dir/src/modules/physics/Joint.cpp.o
+[ 29%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/ChainShape.cpp.o
+[ 30%] Building CXX object CMakeFiles/love_sensor_root.dir/src/modules/sensor/wrap_Sensor.cpp.o
+[ 30%] Building CXX object CMakeFiles/love_math.dir/src/modules/math/wrap_Transform.cpp.o
+[ 31%] Building CXX object CMakeFiles/love_physics_root.dir/src/modules/physics/Shape.cpp.o
+[ 32%] Building CXX object CMakeFiles/love_common.dir/src/common/utf8.cpp.o
+[ 32%] Building CXX object CMakeFiles/love_font_root.dir/src/modules/font/wrap_Rasterizer.cpp.o
+[ 32%] Building CXX object CMakeFiles/love_sensor_sdl.dir/src/modules/sensor/sdl/Sensor.cpp.o
+[ 33%] Building CXX object CMakeFiles/love_sound_root.dir/src/modules/sound/Decoder.cpp.o
+[ 33%] Building CXX object CMakeFiles/love_common.dir/src/common/Variant.cpp.o
+[ 33%] Building CXX object CMakeFiles/love_sound_root.dir/src/modules/sound/Sound.cpp.o
+[ 33%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/CircleShape.cpp.o
+[ 33%] Linking CXX static library liblove_image_magpie.a
+[ 33%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/ParticleSystem.cpp.o
+[ 33%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/Contact.cpp.o
+[ 33%] Built target love_image_magpie
+[ 33%] Building CXX object CMakeFiles/love_sound_root.dir/src/modules/sound/SoundData.cpp.o
+[ 33%] Linking CXX static library liblove_physics_root.a
+[ 33%] Building CXX object CMakeFiles/love_sound_root.dir/src/modules/sound/wrap_Decoder.cpp.o
+[ 33%] Built target love_physics_root
+[ 33%] Linking CXX static library liblove_math.a
+[ 34%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Polyline.cpp.o
+[ 35%] Linking CXX static library liblove_sensor_root.a
+[ 35%] Linking CXX static library liblove_common.a
+[ 35%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/DistanceJoint.cpp.o
+[ 36%] Linking CXX static library liblove_font_root.a
+[ 36%] Built target love_math
+[ 36%] Building CXX object CMakeFiles/love_graphics_opengl.dir/src/modules/graphics/opengl/ShaderStage.cpp.o
+[ 36%] Linking CXX static library liblove_mouse_sdl.a
+[ 36%] Built target love_sensor_root
+[ 36%] Built target love_common
+[ 36%] Linking CXX static library liblove_sensor_sdl.a
+[ 36%] Building CXX object CMakeFiles/love_graphics_opengl.dir/src/modules/graphics/opengl/StreamBuffer.cpp.o
+[ 36%] Building CXX object CMakeFiles/love_sound_lullaby.dir/src/modules/sound/lullaby/FLACDecoder.cpp.o
+[ 37%] Building CXX object CMakeFiles/love_graphics_opengl.dir/src/modules/graphics/opengl/Texture.cpp.o
+[ 37%] Built target love_font_root
+[ 37%] Building CXX object CMakeFiles/love_sound_lullaby.dir/src/modules/sound/lullaby/ModPlugDecoder.cpp.o
+[ 37%] Built target love_mouse_sdl
+[ 37%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Quad.cpp.o
+[ 38%] Building CXX object CMakeFiles/love_sound_lullaby.dir/src/modules/sound/lullaby/MP3Decoder.cpp.o
+[ 38%] Built target love_sensor_sdl
+[ 38%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/renderstate.cpp.o
+[ 38%] Building CXX object CMakeFiles/love_sound_lullaby.dir/src/modules/sound/lullaby/Sound.cpp.o
+[ 38%] Building CXX object CMakeFiles/love_sound_lullaby.dir/src/modules/sound/lullaby/VorbisDecoder.cpp.o
+[ 38%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Shader.cpp.o
+[ 38%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/ShaderStage.cpp.o
+[ 39%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/SpriteBatch.cpp.o
+[ 39%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/EdgeShape.cpp.o
+[ 39%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/StreamBuffer.cpp.o
+[ 40%] Building CXX object CMakeFiles/love_sound_root.dir/src/modules/sound/wrap_Sound.cpp.o
+[ 40%] Building CXX object CMakeFiles/love_sound_root.dir/src/modules/sound/wrap_SoundData.cpp.o
+[ 41%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/FrictionJoint.cpp.o
+[ 41%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/TextBatch.cpp.o
+[ 41%] Building CXX object CMakeFiles/love_sound_lullaby.dir/src/modules/sound/lullaby/WaveDecoder.cpp.o
+[ 41%] Building CXX object CMakeFiles/love_system_root.dir/src/modules/system/System.cpp.o
+[ 41%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Texture.cpp.o
+[ 41%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/GearJoint.cpp.o
+[ 41%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/vertex.cpp.o
+[ 41%] Linking CXX static library liblove_graphics_vulkan.a
+[ 41%] Building CXX object CMakeFiles/love_system_root.dir/src/modules/system/wrap_System.cpp.o
+[ 42%] Building CXX object CMakeFiles/love_system_sdl.dir/src/modules/system/sdl/System.cpp.o
+[ 42%] Built target love_graphics_vulkan
+[ 42%] Building CXX object CMakeFiles/love_thread_root.dir/src/modules/thread/Channel.cpp.o
+[ 42%] Building CXX object CMakeFiles/love_thread_sdl.dir/src/modules/thread/sdl/Thread.cpp.o
+[ 42%] Linking CXX static library liblove_sound_root.a
+[ 42%] Building CXX object CMakeFiles/love_timer.dir/src/modules/timer/Timer.cpp.o
+[ 42%] Building CXX object CMakeFiles/love_thread_sdl.dir/src/modules/thread/sdl/threads.cpp.o
+[ 42%] Built target love_sound_root
+[ 42%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/Joint.cpp.o
+[ 42%] Building CXX object CMakeFiles/love_thread_root.dir/src/modules/thread/LuaThread.cpp.o
+[ 42%] Linking CXX static library liblove_graphics_opengl.a
+[ 42%] Building CXX object CMakeFiles/love_thread_root.dir/src/modules/thread/ThreadModule.cpp.o
+[ 43%] Building CXX object CMakeFiles/love_timer.dir/src/modules/timer/wrap_Timer.cpp.o
+[ 43%] Building CXX object CMakeFiles/love_touch_root.dir/src/modules/touch/Touch.cpp.o
+[ 43%] Built target love_graphics_opengl
+[ 43%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/MotorJoint.cpp.o
+[ 43%] Building CXX object CMakeFiles/love_touch_root.dir/src/modules/touch/wrap_Touch.cpp.o
+[ 43%] Linking CXX static library liblove_system_root.a
+[ 43%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/MouseJoint.cpp.o
+[ 43%] Built target love_system_root
+[ 44%] Building CXX object CMakeFiles/love_touch_sdl.dir/src/modules/touch/sdl/Touch.cpp.o
+[ 45%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Video.cpp.o
+[ 45%] Linking CXX static library liblove_sound_lullaby.a
+[ 45%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/Volatile.cpp.o
+[ 45%] Built target love_sound_lullaby
+[ 46%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/Physics.cpp.o
+[ 46%] Linking CXX static library liblove_thread_sdl.a
+[ 46%] Building CXX object CMakeFiles/love_video_root.dir/src/modules/video/VideoStream.cpp.o
+[ 47%] Building CXX object CMakeFiles/love_thread_root.dir/src/modules/thread/threads.cpp.o
+[ 47%] Linking CXX static library liblove_system_sdl.a
+[ 47%] Built target love_thread_sdl
+[ 47%] Building CXX object CMakeFiles/love_thread_root.dir/src/modules/thread/wrap_Channel.cpp.o
+[ 47%] Building CXX object CMakeFiles/love_video_theora.dir/src/modules/video/theora/Video.cpp.o
+[ 47%] Building CXX object CMakeFiles/love_video_theora.dir/src/modules/video/theora/OggDemuxer.cpp.o
+[ 47%] Built target love_system_sdl
+[ 47%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/PolygonShape.cpp.o
+[ 47%] Building CXX object CMakeFiles/love_thread_root.dir/src/modules/thread/wrap_LuaThread.cpp.o
+[ 47%] Linking CXX static library liblove_timer.a
+[ 47%] Building CXX object CMakeFiles/love_thread_root.dir/src/modules/thread/wrap_ThreadModule.cpp.o
+[ 47%] Built target love_timer
+[ 48%] Building CXX object CMakeFiles/love_window_root.dir/src/modules/window/Window.cpp.o
+[ 48%] Building CXX object CMakeFiles/love_video_theora.dir/src/modules/video/theora/TheoraVideoStream.cpp.o
+[ 48%] Building CXX object CMakeFiles/love_window_root.dir/src/modules/window/wrap_Window.cpp.o
+[ 48%] Linking CXX static library liblove_touch_sdl.a
+[ 48%] Linking CXX static library liblove_touch_root.a
+[ 48%] Building CXX object CMakeFiles/love_video_root.dir/src/modules/video/wrap_Video.cpp.o
+[ 48%] Built target love_touch_sdl
+[ 48%] Building CXX object CMakeFiles/love_video_root.dir/src/modules/video/wrap_VideoStream.cpp.o
+[ 48%] Built target love_touch_root
+[ 48%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_Buffer.cpp.o
+[ 48%] Building CXX object CMakeFiles/love_window_sdl.dir/src/modules/window/sdl/Window.cpp.o
+[ 48%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_Font.cpp.o
+[ 49%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_Graphics.cpp.o
+[ 49%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/PrismaticJoint.cpp.o
+[ 50%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_broad_phase.cpp.o
+[ 50%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_chain_shape.cpp.o
+[ 50%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/PulleyJoint.cpp.o
+[ 50%] Building CXX object CMakeFiles/love_3p_ddsparse.dir/src/libraries/ddsparse/ddsparse.cpp.o
+[ 50%] Building CXX object CMakeFiles/love_3p_enet.dir/src/libraries/enet/enet.cpp.o
+[ 50%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_GraphicsReadback.cpp.o
+[ 51%] Linking CXX static library liblove_thread_root.a
+[ 51%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_Mesh.cpp.o
+[ 51%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_ParticleSystem.cpp.o
+[ 51%] Built target love_thread_root
+[ 51%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_circle_shape.cpp.o
+[ 51%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_collide_circle.cpp.o
+[ 51%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_Quad.cpp.o
+[ 51%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/RevoluteJoint.cpp.o
+[ 52%] Linking CXX static library liblove_video_root.a
+[ 53%] Building C object CMakeFiles/love_3p_enet.dir/src/libraries/enet/libenet/callbacks.c.o
+[ 53%] Linking CXX static library liblove_video_theora.a
+[ 54%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/RopeJoint.cpp.o
+[ 54%] Linking CXX static library liblove_3p_ddsparse.a
+[ 54%] Built target love_video_root
+[ 54%] Built target love_video_theora
+[ 54%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/Shape.cpp.o
+[ 54%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/WeldJoint.cpp.o
+[ 54%] Building C object CMakeFiles/love_3p_enet.dir/src/libraries/enet/libenet/compress.c.o
+[ 54%] Built target love_3p_ddsparse
+[ 54%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_collide_edge.cpp.o
+[ 54%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/WheelJoint.cpp.o
+[ 54%] Building C object CMakeFiles/love_3p_enet.dir/src/libraries/enet/libenet/host.c.o
+[ 54%] Building C object CMakeFiles/love_3p_enet.dir/src/libraries/enet/libenet/list.c.o
+[ 55%] Building C object CMakeFiles/love_3p_enet.dir/src/libraries/enet/libenet/packet.c.o
+[ 56%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_Shader.cpp.o
+[ 57%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_collide_polygon.cpp.o
+[ 57%] Building CXX object CMakeFiles/love_3p_glad.dir/src/libraries/glad/glad.cpp.o
+[ 57%] Building C object CMakeFiles/love_3p_enet.dir/src/libraries/enet/libenet/peer.c.o
+[ 57%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_collision.cpp.o
+[ 57%] Building C object CMakeFiles/love_3p_enet.dir/src/libraries/enet/libenet/protocol.c.o
+[ 58%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/World.cpp.o
+[ 58%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/GenericCodeGen/CodeGen.cpp.o
+[ 58%] Linking CXX static library liblove_window_root.a
+[ 58%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_Body.cpp.o
+[ 58%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_distance.cpp.o
+[ 58%] Building C object CMakeFiles/love_3p_enet.dir/src/libraries/enet/libenet/unix.c.o
+[ 58%] Built target love_window_root
+[ 58%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_SpriteBatch.cpp.o
+[ 58%] Building CXX object CMakeFiles/love_3p_lodepng.dir/src/libraries/lodepng/lodepng.cpp.o
+[ 58%] Building C object CMakeFiles/love_3p_enet.dir/src/libraries/enet/libenet/win32.c.o
+[ 59%] Linking CXX static library liblove_3p_enet.a
+[ 59%] Built target love_3p_enet
+[ 59%] Building CXX object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/luasocket.cpp.o
+[ 59%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_dynamic_tree.cpp.o
+[ 59%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_ChainShape.cpp.o
+[ 59%] Linking CXX static library liblove_3p_glad.a
+[ 59%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/auxiliar.c.o
+[ 59%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_CircleShape.cpp.o
+[ 59%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/GenericCodeGen/Link.cpp.o
+[ 59%] Built target love_3p_glad
+[ 59%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/buffer.c.o
+[ 59%] Building C object CMakeFiles/love_3p_lua53.dir/src/libraries/lua53/lstrlib.c.o
+[ 59%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/android/AndroidClient.cpp.o
+[ 59%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/common/HTTPRequest.cpp.o
+[ 59%] Building C object CMakeFiles/love_3p_lua53.dir/src/libraries/lua53/lutf8lib.c.o
+[ 60%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp.o
+[ 60%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/common/HTTPS.cpp.o
+[ 61%] Linking C static library liblove_3p_lua53.a
+[ 61%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_Texture.cpp.o
+[ 61%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_edge_shape.cpp.o
+[ 61%] Built target love_3p_lua53
+[ 61%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/compat.c.o
+[ 61%] Building C object CMakeFiles/love_3p_lz4.dir/src/libraries/lz4/lz4.c.o
+[ 61%] Building C object CMakeFiles/love_3p_lz4.dir/src/libraries/lz4/lz4hc.c.o
+[ 62%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/except.c.o
+[ 63%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_polygon_shape.cpp.o
+[ 63%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/inet.c.o
+[ 63%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/collision/b2_time_of_impact.cpp.o
+[ 64%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/common/HTTPSClient.cpp.o
+[ 64%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/io.c.o
+[ 64%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_Contact.cpp.o
+[ 64%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/luasocket.c.o
+[ 64%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/preprocessor/PpAtom.cpp.o
+[ 65%] Building CXX object CMakeFiles/love_3p_noise1234.dir/src/libraries/noise1234/noise1234.cpp.o
+[ 65%] Linking CXX static library liblove_3p_lodepng.a
+[ 65%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/mime.c.o
+[ 65%] Building CXX object CMakeFiles/love_3p_noise1234.dir/src/libraries/noise1234/simplexnoise1234.cpp.o
+[ 65%] Built target love_3p_lodepng
+[ 65%] Linking C static library liblove_3p_lz4.a
+[ 65%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/generic/CurlClient.cpp.o
+[ 66%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/options.c.o
+[ 66%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/common/PlaintextConnection.cpp.o
+[ 66%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_TextBatch.cpp.o
+[ 66%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/common/b2_block_allocator.cpp.o
+[ 66%] Linking CXX static library liblove_3p_noise1234.a
+[ 66%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/generic/LinktimeLibraryLoader.cpp.o
+[ 66%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/generic/OpenSSLConnection.cpp.o
+[ 66%] Built target love_3p_lz4
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp: In member function ‘virtual void love::window::sdl::Window::showFileDialog(const love::window::Window::FileDialogData&, love::window::Window::FileDialogCallback, void*)’:
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1571:9: error: ‘SDL_FileDialogType’ was not declared in this scope; did you mean ‘FileDialogType’?
+ 1571 |         SDL_FileDialogType sdltype = SDL_FILEDIALOG_OPENFILE;
+      |         ^~~~~~~~~~~~~~~~~~
+      |         FileDialogType
+[ 66%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp.o
+[ 67%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/generic/UnixLibraryLoader.cpp.o
+[ 67%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/common/b2_draw.cpp.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1576:17: error: ‘sdltype’ was not declared in this scope; did you mean ‘type’?
+ 1576 |                 sdltype = SDL_FILEDIALOG_OPENFILE;
+      |                 ^~~~~~~
+      |                 type
+[ 67%] Built target love_3p_noise1234
+[ 67%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/select.c.o
+[ 67%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/tcp.c.o
+[ 67%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_7z.c.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1576:27: error: ‘SDL_FILEDIALOG_OPENFILE’ was not declared in this scope; did you mean ‘FILEDIALOG_OPENFILE’?
+ 1576 |                 sdltype = SDL_FILEDIALOG_OPENFILE;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+      |                           FILEDIALOG_OPENFILE
+[ 67%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/timeout.c.o
+[ 67%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_dir.c.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1579:27: error: ‘SDL_FILEDIALOG_OPENFOLDER’ was not declared in this scope; did you mean ‘FILEDIALOG_OPENFOLDER’?
+ 1579 |                 sdltype = SDL_FILEDIALOG_OPENFOLDER;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                           FILEDIALOG_OPENFOLDER
+[ 68%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_grp.c.o
+[ 68%] Building CXX object CMakeFiles/love_graphics_root.dir/src/modules/graphics/wrap_Video.cpp.o
+[ 68%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/udp.c.o
+[ 68%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/preprocessor/PpScanner.cpp.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1582:27: error: ‘SDL_FILEDIALOG_SAVEFILE’ was not declared in this scope; did you mean ‘FILEDIALOG_SAVEFILE’?
+ 1582 |                 sdltype = SDL_FILEDIALOG_SAVEFILE;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+      |                           FILEDIALOG_SAVEFILE
+[ 69%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/unix.c.o
+[ 69%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/common/b2_math.cpp.o
+[ 69%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/unixdgram.c.o
+[ 69%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_cfg.cpp.o
+[ 70%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/common/b2_settings.cpp.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1604:53: error: ‘SDL_PROP_FILE_DIALOG_TITLE_STRING’ was not declared in this scope; did you mean ‘SDL_PROP_WINDOW_CREATE_TITLE_STRING’?
+ 1604 |                 SDL_SetStringProperty(state->props, SDL_PROP_FILE_DIALOG_TITLE_STRING, state->data.title.c_str());
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     SDL_PROP_WINDOW_CREATE_TITLE_STRING
+[ 70%] Building C object CMakeFiles/love_3p_wuff.dir/src/libraries/Wuff/wuff.c.o
+[ 70%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/unixstream.c.o
+[ 70%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/common/b2_stack_allocator.cpp.o
+[ 71%] Building C object CMakeFiles/love_3p_wuff.dir/src/libraries/Wuff/wuff_convert.c.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1607:53: error: ‘SDL_PROP_FILE_DIALOG_ACCEPT_STRING’ was not declared in this scope
+ 1607 |                 SDL_SetStringProperty(state->props, SDL_PROP_FILE_DIALOG_ACCEPT_STRING, state->data.acceptLabel.c_str());
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 72%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_DistanceJoint.cpp.o
+[ 72%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/serial.c.o
+[ 72%] Building C object CMakeFiles/love_3p_wuff.dir/src/libraries/Wuff/wuff_internal.c.o
+[ 72%] Building C object CMakeFiles/love_3p_xxhash.dir/src/libraries/xxHash/xxhash.c.o
+[ 72%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_hog.c.o
+[ 73%] Building C object CMakeFiles/love_3p_luasocket.dir/src/libraries/luasocket/libluasocket/usocket.c.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1610:53: error: ‘SDL_PROP_FILE_DIALOG_CANCEL_STRING’ was not declared in this scope
+ 1610 |                 SDL_SetStringProperty(state->props, SDL_PROP_FILE_DIALOG_CANCEL_STRING, state->data.cancelLabel.c_str());
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 73%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_iso9660.c.o
+[ 73%] Building C object CMakeFiles/love_3p_wuff.dir/src/libraries/Wuff/wuff_memory.c.o
+[ 73%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp.o
+[ 74%] Linking C static library liblove_3p_wuff.a
+[ 74%] Linking C static library liblove_3p_xxhash.a
+[ 74%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_cpp.cpp.o
+[ 73%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/common/b2_timer.cpp.o
+[ 74%] Linking CXX static library liblove_3p_luasocket.a
+[ 74%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_mvl.c.o
+[ 74%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/Constant.cpp.o
+[ 75%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/attribute.cpp.o
+[ 75%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_body.cpp.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1613:53: error: ‘SDL_PROP_FILE_DIALOG_LOCATION_STRING’ was not declared in this scope
+ 1613 |                 SDL_SetStringProperty(state->props, SDL_PROP_FILE_DIALOG_LOCATION_STRING, state->data.defaultName.c_str());
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 75%] Built target love_3p_xxhash
+[ 75%] Built target love_3p_wuff
+[ 75%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/lua/main.cpp.o
+[ 75%] Built target love_3p_luasocket
+[ 75%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_chain_circle_contact.cpp.o
+[ 75%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_qpak.c.o
+[ 76%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_chain_polygon_contact.cpp.o
+[ 77%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_slb.c.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1616:54: error: ‘SDL_PROP_FILE_DIALOG_WINDOW_POINTER’ was not declared in this scope; did you mean ‘SDL_PROP_RENDERER_WINDOW_POINTER’?
+ 1616 |                 SDL_SetPointerProperty(state->props, SDL_PROP_FILE_DIALOG_WINDOW_POINTER, window);
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                      SDL_PROP_RENDERER_WINDOW_POINTER
+[ 77%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_unpacked.c.o
+[ 77%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_vdf.c.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1620:54: error: ‘SDL_PROP_FILE_DIALOG_FILTERS_POINTER’ was not declared in this scope
+ 1620 |                 SDL_SetPointerProperty(state->props, SDL_PROP_FILE_DIALOG_FILTERS_POINTER, state->sdlFilters.data());
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 77%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_contact.cpp.o
+[ 77%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_wad.c.o
+[ 77%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_circle_contact.cpp.o
+[ 77%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_contact_manager.cpp.o
+[ 77%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_archiver_zip.c.o
+[ 78%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_cross_parsed_ir.cpp.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1621:53: error: ‘SDL_PROP_FILE_DIALOG_NFILTERS_NUMBER’ was not declared in this scope
+ 1621 |                 SDL_SetNumberProperty(state->props, SDL_PROP_FILE_DIALOG_NFILTERS_NUMBER, state->sdlFilters.size());
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 78%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/windows/SChannelConnection.cpp.o
+[ 79%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_byteorder.c.o
+[ 79%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_platform_android.c.o
+[ 79%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_EdgeShape.cpp.o
+[ 79%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_FrictionJoint.cpp.o
+[ 79%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/windows/WindowsLibraryLoader.cpp.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1624:46: error: ‘SDL_PROP_FILE_DIALOG_MANY_BOOLEAN’ was not declared in this scope
+ 1624 |         SDL_SetBooleanProperty(state->props, SDL_PROP_FILE_DIALOG_MANY_BOOLEAN, data.multiSelect);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1626:42: error: ‘sdltype’ was not declared in this scope; did you mean ‘type’?
+ 1626 |         SDL_ShowFileDialogWithProperties(sdltype, fileDialogCallbackSDL, state, state->props);
+      |                                          ^~~~~~~
+      |                                          type
+[ 79%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_cross_util.cpp.o
+[ 80%] Linking CXX static library liblove_graphics_root.a
+[ 80%] Building CXX object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_platform_haiku.cpp.o
+/home/zach/.cache/yay/love-git/src/love/src/modules/window/sdl/Window.cpp:1626:9: error: ‘SDL_ShowFileDialogWithProperties’ was not declared in this scope; did you mean ‘SDL_CreateWindowWithProperties’?
+ 1626 |         SDL_ShowFileDialogWithProperties(sdltype, fileDialogCallbackSDL, state, state->props);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         SDL_CreateWindowWithProperties
+[ 80%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_platform_os2.c.o
+[ 80%] Building CXX object CMakeFiles/love_3p_luahttps.dir/src/libraries/luahttps/src/windows/WinINetClient.cpp.o
+[ 81%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_contact_solver.cpp.o
+[ 81%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_platform_posix.c.o
+[ 82%] Linking CXX static library liblove_3p_luahttps.a
+[ 82%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_cross.cpp.o
+[ 82%] Built target love_graphics_root
+[ 82%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/glslang_tab.cpp.o
+[ 82%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_glsl.cpp.o
+[ 82%] Built target love_3p_luahttps
+[ 83%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_platform_qnx.c.o
+[ 83%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_hlsl.cpp.o
+[ 83%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_platform_unix.c.o
+[ 83%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_platform_windows.c.o
+[ 83%] Building CXX object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_platform_winrt.cpp.o
+[ 84%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs_unicode.c.o
+[ 84%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_distance_joint.cpp.o
+[ 84%] Building C object CMakeFiles/love_3p_physfs.dir/src/libraries/physfs/physfs.c.o
+[ 84%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/InfoSink.cpp.o
+make[2]: *** [CMakeFiles/love_window_sdl.dir/build.make:79: CMakeFiles/love_window_sdl.dir/src/modules/window/sdl/Window.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1503: CMakeFiles/love_window_sdl.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 85%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_msl.cpp.o
+[ 85%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_edge_circle_contact.cpp.o
+[ 85%] Linking CXX static library liblove_3p_physfs.a
+[ 85%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_parser.cpp.o
+[ 85%] Built target love_3p_physfs
+[ 85%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_GearJoint.cpp.o
+[ 85%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/Initialize.cpp.o
+[ 85%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_edge_polygon_contact.cpp.o
+[ 85%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_fixture.cpp.o
+[ 85%] Building CXX object CMakeFiles/love_3p_spirv_cross.dir/src/libraries/spirv_cross/spirv_reflect.cpp.o
+[ 86%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/Intermediate.cpp.o
+[ 86%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_Joint.cpp.o
+[ 87%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_friction_joint.cpp.o
+[ 87%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/intermOut.cpp.o
+[ 88%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_MotorJoint.cpp.o
+[ 88%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_gear_joint.cpp.o
+[ 88%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/IntermTraverse.cpp.o
+[ 88%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/iomapper.cpp.o
+[ 88%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_MouseJoint.cpp.o
+[ 88%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_island.cpp.o
+[ 88%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_Physics.cpp.o
+[ 88%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_joint.cpp.o
+[ 88%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_motor_joint.cpp.o
+[ 89%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_mouse_joint.cpp.o
+[ 89%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_PolygonShape.cpp.o
+[ 89%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_polygon_circle_contact.cpp.o
+[ 89%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_polygon_contact.cpp.o
+[ 89%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/limits.cpp.o
+[ 89%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_PrismaticJoint.cpp.o
+[ 89%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_prismatic_joint.cpp.o
+[ 90%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/linkValidate.cpp.o
+[ 90%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/parseConst.cpp.o
+[ 90%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/ParseContextBase.cpp.o
+[ 91%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_PulleyJoint.cpp.o
+[ 91%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_pulley_joint.cpp.o
+[ 91%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_RevoluteJoint.cpp.o
+[ 91%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/ParseHelper.cpp.o
+[ 91%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_RopeJoint.cpp.o
+[ 92%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_revolute_joint.cpp.o
+[ 93%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/PoolAlloc.cpp.o
+[ 93%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/propagateNoContraction.cpp.o
+[ 93%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_weld_joint.cpp.o
+[ 93%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_Shape.cpp.o
+[ 93%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_wheel_joint.cpp.o
+[ 93%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/reflection.cpp.o
+[ 93%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_WeldJoint.cpp.o
+[ 93%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_world.cpp.o
+[ 94%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_WheelJoint.cpp.o
+[ 94%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/dynamics/b2_world_callbacks.cpp.o
+[ 95%] Building CXX object CMakeFiles/love_3p_box2d.dir/src/libraries/box2d/rope/b2_rope.cpp.o
+[ 95%] Building CXX object CMakeFiles/love_physics_box2d.dir/src/modules/physics/box2d/wrap_World.cpp.o
+[ 95%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/RemoveTree.cpp.o
+[ 95%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/Scan.cpp.o
+[ 95%] Linking CXX static library liblove_3p_box2d.a
+[ 96%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/ShaderLang.cpp.o
+[ 96%] Built target love_3p_box2d
+[ 96%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/SpirvIntrinsics.cpp.o
+[ 96%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/SymbolTable.cpp.o
+[ 96%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/MachineIndependent/Versions.cpp.o
+[ 96%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/ResourceLimits/ResourceLimits.cpp.o
+[ 97%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/SPIRV/disassemble.cpp.o
+[ 97%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/SPIRV/doc.cpp.o
+[ 97%] Linking CXX static library liblove_physics_box2d.a
+[ 97%] Built target love_physics_box2d
+[ 97%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/SPIRV/GlslangToSpv.cpp.o
+[ 97%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/SPIRV/InReadableOrder.cpp.o
+[ 97%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/SPIRV/Logger.cpp.o
+[ 98%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/SPIRV/SpvBuilder.cpp.o
+[ 98%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/SPIRV/SpvPostProcess.cpp.o
+[ 98%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/SPIRV/SPVRemapper.cpp.o
+[ 98%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/SPIRV/SpvTools.cpp.o
+[ 98%] Building CXX object CMakeFiles/love_3p_glslang.dir/src/libraries/glslang/glslang/OSDependent/Unix/ossource.cpp.o
+[ 99%] Linking CXX static library liblove_3p_glslang.a
+[ 99%] Built target love_3p_glslang
+[ 99%] Linking CXX static library liblove_3p_spirv_cross.a
+[ 99%] Built target love_3p_spirv_cross
+make: *** [Makefile:136: all] Error 2
+==> ERROR: A failure occurred in build().
+    Aborting...
+ -> error making: love-git-exit status 4
+ -> Failed to install the following packages. Manual intervention is required:
+love-git - exit status 4
+❯ zellij action dump-screen -f ~/LWBar/love-build.log
+                                                               
+                                                               
